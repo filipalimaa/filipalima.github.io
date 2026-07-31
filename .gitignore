@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Raw exported photos — organized, renamed copies live in assets/about/
+/WhatsApp Image*.jpeg
+/WhatsApp Image*.jpg

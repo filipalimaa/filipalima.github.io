@@ -1,95 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to my page!</title>
-  <style>
-    body { 
-      font-family: 'Segoe UI', sans-serif; 
-      margin: 0; 
-      background: linear-gradient(to bottom, #f4f7f5, #fef8f0); 
-      color: #333;
-    }
-    header {
-      background: #a3b18a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .section {
-      padding: 3rem;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #8fb996;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #718355;
-    }
-    .dog {
-      font-size: 4rem;
-    }
-   footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  footer a {
-    color: #d4a373;
-  }
-  </style>
+  <title>Filipa Lima | Software Engineer</title>
+  <meta name="description" content="Filipa Lima — Software Engineer with a Chemical Engineering background, focused on automation, backend development and problem-solving.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Hi there! Welcome to my page 🐾</h1>
-    <p>Rewriting my career — with a dog by my side</p>
-    <nav>
-      <a href="#about">About me</a>
-      <a href="#dogs">Paws & Stay</a>
-      <a href="#projects">Projects</a>
-    </nav>
+<body class="home-page">
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">Filipa <span>Lima</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
-  <section class="section" id="about">
-    <h2>🌱 My Journey</h2>
-    <p>I’m a career switcher blending a background in Chemical Engineering with a new passion for tech.
-      After 5+ years solving problems in different industries, I’ve discovered that my real joy comes from creating clever, useful solutions — now with code instead of reactors.
-      Over the past year, I’ve been sharpening my backend skills in Python, Java, and TypeScript. A mentorship with As Raparigas do Código gave me not just solid algorithm foundations, 
-      but also a peek behind the curtain into the tech world — from Git and CI/CD pipelines to observability and writing clean, readable code.
+  <main>
+    <section class="hero home-hero">
+      <div class="container">
+        <span class="eyebrow">Software Engineer · Aveiro, Portugal</span>
+        <h1>Hi, I'm Filipa Lima.<br>I build practical solutions to real problems.</h1>
+        <p class="lead">
+          A Chemical Engineer turned Software Engineer, with over 5 years of experience across
+          different industries. I'm currently deepening my backend skills in Python, Java and
+          TypeScript - and I love turning messy processes into clean, automated systems.
+        </p>
+        <div class="hero-actions">
+          <a href="about.html" class="btn btn-primary">Get to know me</a>
+          <a href="resume.html" class="btn btn-outline">View my resume</a>
+        </div>
+      </div>
+    </section>
 
-      In short: I love learning, I adapt quickly, and I’m always ready for the next challenge (bonus points if there’s a dog nearby). 🐾💻</p>
-  </section>
+    <section class="section-alt home-cta">
+      <div class="container" style="text-align:center;">
+        <h2>Open to new challenges</h2>
+        <p class="lead" style="margin:0 auto 1.5rem;">
+          I'm actively looking for backend / software engineering opportunities where I can keep
+          growing and building things that matter.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Let's talk</a>
+      </div>
+    </section>
+  </main>
 
-  <section class="section" id="dogs">
-    <h2>🐶 Tail-Wagging Stays</h2>
-    <p>Where wagging tails meet warm hearts — and the treats never run out! 
-       Here, every pup is treated like family — with endless cuddles, playtime, and a cozy place to call their second home.</p>
-    <div class="dog">🐕🐾🐕</div>
-  </section>
-
-  <section class="section" id="projects">
-    <h2>💻 Projects</h2>
-    <p>From idea to code — here’s what I’ve been working on.</p>
-  </section>
-
-  <footer id="contact">
-    <p>📧 Get in touch: <a href="mailto:teuemail@email.com" style="color:#ffb347;">limaafilipa@gmail.com</a></p>
-    <p>© 2025</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Filipa Lima.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/filipaalima/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/filipalimaa" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:limaafilipa@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
